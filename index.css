@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    padding-top: 70px;
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+    background-color:  rgb(254, 247, 247);
+    color: rgb(131, 24, 67);
+}
+.navbar {
+    width: 100%;
+    background-color:rgb(254, 247, 247);
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+.nav-links a {
+    text-decoration: none;
+    color: rgb(131, 24, 67);
+    transition: transform 0.20s ease, color 0.20s ease;
+    display: inline-block; 
+}
+.nav-links a:hover {
+  color: rgb(190, 24, 93);
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.nav-logo {
+   margin: 0; 
+   padding: 0;
+}
+.nav-logo img {
+    height: 100px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.nav-logo img:hover {
+    transform: scale(1.3);
+}
+/* footer */
+footer {
+    background-color:  rgb(190, 24, 93);
+    color:  rgb(249, 168, 212);
+    padding: 10px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+.logo img {
+    height: 170px;
+    width: auto;
+}
+.footer-container ul {
+    list-style: none;
+    }
+.footer-container a {
+    text-decoration: none;
+    color: rgb(249, 168, 212);
+    transition: transform 0.20s ease, color 0.20s ease;
+    display: inline-block;
+}
+.footer-container a:hover {
+    color: rgb(131, 24, 67);
+    text-decoration: underline;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+/* main section */
+.hero-section {
+    background: url(Assets/meiying-ng-OrwkD-iWgqg-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+        }
+.hero-content {
+    background-color: rgb(253, 242, 248);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(131, 24, 67);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    border-radius: 10px;
+    background-color: rgb(131, 24, 67);
+    border: 1px solid rgb(131, 24, 67);
+    width: 30%;
+    padding: 6px;
+    color: rgb(253, 242, 248); 
+    transition: transform 0.20s ease, color 0.20s ease;
+    display: inline-block;
+    }
+button:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+/* Section 1 */
+.about {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 70px;
+margin-right: 120px;
+text-align: justify;
+}
+.about img {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 30px;   
+    
+}
+.practice-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+.practice-areas{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.practice-areas img {
+ width: 100%;
+ border-radius: 20px;
+ transition: transform 0.3s ease;
+}
+.practice-areas:hover img{
+    transform: scale(1.1);
+    }
+.practice-areas::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(131, 24, 67, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.practice-areas:hover::after {
+  opacity: 1;
+}
+.practice h2 {
+    text-align: center;
+    color: rgb(190, 24, 93);
+    font-weight: bolder;
+    padding: 10px;
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+   }
+.text p {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  color:black;
+  opacity: 1;
+}
