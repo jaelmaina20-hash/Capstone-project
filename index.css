@@ -126,6 +126,12 @@ button:hover {
     transform: scale(1.05);
     font-weight: bold;
 }
+span {
+    color:  rgb(190, 24, 93);
+}
+.heading {
+    color:  rgb(190, 24, 93);
+}
 /* Section 1 */
 .about {
 display: flex;

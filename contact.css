@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 0px;
+    background-color:  rgb(254, 247, 247);
+    color: rgb(131, 24, 67);
 }
 .navbar {
     width: 100%;
@@ -84,4 +86,83 @@ footer {
     text-decoration: underline;
     transform: scale(1.05);
     font-weight: bold;
+}
+/* hero section */
+.hero-section {
+    background: url(Assets/meiying-ng-OrwkD-iWgqg-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    padding: 150px 30px;
+    }
+.hero-content {
+    color: rgb(190, 24, 93);    
+}
+.hero a {
+    text-decoration: none;
+    color: rgb(190, 24, 93);
+}
+.hero a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.hero {
+    color: rgb(190, 24, 93);
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+}
+span {
+    color: rgb(131, 24, 67);
+    text-decoration: underline;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    padding: 30px 150px 30px 150px;
+}
+.contact {
+font-style: italic;
+}
+.contact p {
+    margin-bottom: 10px ;
+}
+.contact a {
+    color:  rgb(244, 114, 182);
+}
+.contact a:hover {
+    color: rgb(190, 24, 93);
+    text-decoration: underline;
+    font-weight: bolder;   
+}
+/* form */
+.form-container {
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 18px 28px rgba(190, 24, 93, 0.2);
+}
+input, textarea {
+    width: 90%;
+    margin: 5px 5px;
+    padding: 10px;
+    border: 1px solid rgb(190, 24, 93);
+    border-radius: 8px;
+    margin-bottom: 10px;
+   }
+button {
+    width: 40%;
+    padding: 10px;
+    background:  rgb(236, 72, 153);
+    color: rgb(14, 5, 9);
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid rgb(190, 24, 93);
+    margin-bottom: 10px;
+}
+button:hover {
+    background:  rgb(244, 114, 182);
+    color: white;
 }
