@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 0px;
+    background-color:  rgb(254, 247, 247);
+    color: rgb(131, 24, 67);
 }
 .navbar {
     width: 100%;
@@ -84,4 +86,92 @@ footer {
     text-decoration: underline;
     transform: scale(1.05);
     font-weight: bold;
+}
+/* hero */
+.hero-section {
+    background: url(Assets/meiying-ng-OrwkD-iWgqg-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    padding: 150px 30px;
+    }
+.hero-content {
+    color: rgb(190, 24, 93);    
+}
+.hero a {
+    text-decoration: none;
+    color: rgb(190, 24, 93);
+}
+.hero a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.hero {
+    color: rgb(190, 24, 93);
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+}
+span {
+    color: rgb(131, 24, 67);
+    text-decoration: underline;
+}
+/* image-container */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+.image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+.image:hover img{
+    transform: scale(1.1);
+    }
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(131, 24, 67, 0.5);  */
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  border-radius: 20px;
+  z-index: 1;
+}
+.image:hover::after {
+  opacity: 1;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+   }
+.text p {
+  text-align: center;
+}
+.text a {
+    color: rgb(190, 24, 93);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.text a:hover {
+    text-decoration: underline;
 }

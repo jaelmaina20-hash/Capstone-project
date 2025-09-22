@@ -117,6 +117,7 @@ span {
     color: rgb(131, 24, 67);
     text-decoration: underline;
 }
+/* contact */
 .contact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

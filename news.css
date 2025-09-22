@@ -11,6 +11,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 0px;
+    background-color:  rgb(254, 247, 247);
+    color: rgb(131, 24, 67);
 }
 .navbar {
     width: 100%;
@@ -84,4 +86,50 @@ footer {
     text-decoration: underline;
     transform: scale(1.05);
     font-weight: bold;
+}
+/* hero */
+.hero-section {
+    background: url(Assets/meiying-ng-OrwkD-iWgqg-unsplash.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    padding: 150px 30px;
+    }
+.hero-content {
+    color: rgb(190, 24, 93);    
+}
+.hero a {
+    text-decoration: none;
+    color: rgb(190, 24, 93);
+}
+.hero a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+.hero {
+    color: rgb(190, 24, 93);
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+}
+span {
+    color: rgb(131, 24, 67);
+    text-decoration: underline;
+}
+/* container */
+.container {
+    padding: 20px;
+    text-align: justify;
+}
+.container h2 {
+    color: rgb(190, 24, 93);
+    margin-bottom: 10px;
+}
+.container h3 {
+    color: rgb(236, 72, 153);
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 20px;
 }
