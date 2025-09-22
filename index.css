@@ -98,7 +98,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 50px;
-        }
+    }
 .hero-content {
     background-color: rgb(253, 242, 248);
     padding: 10px;
@@ -111,7 +111,7 @@ footer {
     align-items: center;
     gap: 20px;
 }
-button {
+.btn {
     border-radius: 10px;
     background-color: rgb(131, 24, 67);
     border: 1px solid rgb(131, 24, 67);
@@ -120,11 +120,16 @@ button {
     color: rgb(253, 242, 248); 
     transition: transform 0.20s ease, color 0.20s ease;
     display: inline-block;
+    text-align: center;
     }
-button:hover {
+.btn:hover {
     text-decoration: underline;
     transform: scale(1.05);
     font-weight: bold;
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(254, 247, 247);
 }
 span {
     color:  rgb(190, 24, 93);
@@ -201,4 +206,99 @@ text-align: justify;
    }
 .text p {
   text-align: center;
+}
+/* Media queries */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none; 
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .nav-logo img {
+    height: 80px;
+  }
+
+  /* Hero section */
+  .hero-section {
+    height: auto; 
+    padding: 20px;
+    background-attachment: scroll; 
+  }
+  .hero-content {
+    width: 100%; 
+    padding: 20px;
+    font-size: 14px;
+  }
+  .btn {
+    width: 80%; 
+  }
+
+  /* About section */
+  .about {
+    flex-direction: column; 
+    margin: 20px;
+    gap: 20px;
+  }
+  .about img {
+    width: 100%;
+  }
+
+  /* Practice areas */
+  .practice-container {
+    grid-template-columns: 1fr; 
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo img {
+    height: 120px;
+  }
+}
+/* phones and tabs */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Navbar */
+  .nav-links {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .nav-logo img {
+    height: 90px;
+  }
+
+  /* Hero */
+  .hero-content {
+    width: 70%; 
+    font-size: 16px;
+  }
+
+  /* About */
+  .about {
+    gap: 40px;
+    margin: 20px;
+  }
+
+  /* Practice areas */
+  .practice-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  /* Keep your original desktop styles */
+  .practice-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
 }
