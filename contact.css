@@ -115,7 +115,7 @@ footer {
 }
 span {
     color: rgb(131, 24, 67);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 /* contact */
 .contact-container {

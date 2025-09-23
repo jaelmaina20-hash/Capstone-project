@@ -117,7 +117,7 @@ footer {
 }
 span {
     color: rgb(131, 24, 67);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 /* overview */
 .about {
@@ -201,7 +201,12 @@ span {
     border-radius: 10px;
     background: rgb(252, 231, 243);
     padding: 20px;
+    transition: transform 0.3s ease;
+    display: block;
 }
+.value:hover {
+    transform: scale(0.9);
+    }
 .icon {
     margin-bottom: 15px;
     text-align: center;
