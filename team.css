@@ -124,6 +124,10 @@ span {
 }
 .leaders img {
     width: 50%;  
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(190, 24, 93);
 }
 h2 {
     text-align: center;
@@ -136,6 +140,19 @@ h2 {
 }
 .associates img {
     width: 50%;  
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 1px solid rgb(190, 24, 93);
+}
+.name {
+  color: rgb(190, 24, 93);
+  font-weight: bolder;
+  font-size: 23px;
+}
+.role {
+  font-weight: bold;
+  font-size: 20px;
 }
 /* media queries */
 @media (max-width: 768px) {

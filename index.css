@@ -285,7 +285,7 @@ text-align: justify;
 
   /* Practice areas */
   .practice-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   /* Footer */
@@ -297,8 +297,8 @@ text-align: justify;
 
 
 @media (min-width: 1025px) {
-  /* Keep your original desktop styles */
+  
   .practice-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
